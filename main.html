@@ -110,12 +110,36 @@
             text-align: center;
             font-size: 18px;
             font-weight: 600;
-            width: 200px;
-            /* animation: scaleUp 1s ease-in-out; */
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
             transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .category img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
         .category:hover {
             transform: scale(1.05);
+        }
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+        }
+        .contact a {
+            display: block;
+            font-size: 18px;
+            color: #8b3d3d;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
         }
         .footer {
             background: #8b3d3d;
@@ -126,7 +150,7 @@
             position: relative;
             /* animation: slideInUp 1.5s ease-in-out; */
         }
-        .footer::before {
+        /* .footer::before {
             content: "";
             position: absolute;
             top: -30px;
@@ -136,7 +160,7 @@
             background: #8b3d3d;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
-        }
+        } */
         .footer-content {
             max-width: 800px;
             margin: auto;
@@ -167,6 +191,11 @@
             }
             .category {
                 width: 80%;
+                text-align: center;
+            }
+            .category img {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -186,10 +215,16 @@
         <p>We offer custom-made clothing, hand-embroidered designs, and exclusive fashion consultations to bring your style vision to life.</p>
     </div>
     <div class="categories">
-        <div class="category">Sarees</div>
-        <div class="category">Lehengas</div>
-        <div class="category">Custom Designs</div>
-        <div class="category">Bridal Wear</div>
+        <div class="category"><img src="images/saree.jpg" alt="Sarees">Sarees</div>
+        <div class="category"><img src="images/lehengas.jpeg" alt="Lehengas">Lehengas</div>
+        <div class="category"><img src="images/custom-designs.jpg" alt="Custom Designs">Custom Designs</div>
+        <div class="category"><img src="images/bridal-wear.jpg" alt="Bridal Wear">Bridal Wear</div>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <a href="mailto:contact@mtfashion.com">Email: contact@mtfashion.com</a>
+        <a href="tel:+919876543210">Phone: +91 98765 43210</a>
+        <a href="#">Follow us on Instagram</a>
     </div>
     <div class="footer">
         <div class="footer-content">
