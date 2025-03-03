@@ -39,7 +39,7 @@
             color: white;
             letter-spacing: 2px;
             text-transform: uppercase;
-            /* animation: fadeIn 1.5s ease-in-out; */
+            animation: fadeIn 1.5s ease-in-out;
         }
         .hero {
             text-align: center;
@@ -96,6 +96,7 @@
         }
         .categories {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             padding: 50px 20px;
@@ -149,11 +150,29 @@
         .footer a:hover {
             color: #ff8585;
         }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+            .cta {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            .category {
+                width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">MT Fashion</div>
-    
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -162,19 +181,16 @@
             <button class="cta">Explore Now</button>
         </div>
     </div>
-    
     <div class="services">
         <h2>Our Services</h2>
         <p>We offer custom-made clothing, hand-embroidered designs, and exclusive fashion consultations to bring your style vision to life.</p>
     </div>
-    
     <div class="categories">
         <div class="category">Sarees</div>
         <div class="category">Lehengas</div>
         <div class="category">Custom Designs</div>
         <div class="category">Bridal Wear</div>
     </div>
-    
     <div class="footer">
         <div class="footer-content">
             <p>© 2025 MT Fashion | All rights reserved.</p>
