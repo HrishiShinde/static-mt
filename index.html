@@ -44,9 +44,10 @@
         .hero {
             text-align: center;
             padding: 150px 20px;
-            background: url('https://images.pexels.com/photos/5480692/pexels-photo-5480692.jpeg') no-repeat center center/cover;
+            background: url('https://images.pexels.com/photos/5480692/pexels-photo-5480692.jpeg') no-repeat center center/cover !important;
             color: white;
             position: relative;
+            margin-bottom: 40px;
         }
         .hero-overlay {
             background: rgba(0, 0, 0, 0.5);
@@ -94,13 +95,38 @@
             background: #fff;
             /* animation: fadeIn 1.5s ease-in-out; */
         }
+
+        .section {
+            text-align: center;
+            padding: 80px 10%;
+            background: #fff;
+            margin-bottom: 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 36px;
+            color: #8b3d3d;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
         .categories {
+            background: #ffe5e5;
+            padding: 80px 10%;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .categories-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
-            padding: 50px 20px;
-            background: #ffe5e5;
         }
         .category {
             background: white;
@@ -128,6 +154,25 @@
         .category:hover {
             transform: scale(1.05);
         }
+        .overview, .values, .why-choose {
+            text-align: center;
+            padding: 60px 20px;
+            background: #fff;
+        }
+        .overview h2, .values h2, .why-choose h2 {
+            font-size: 36px;
+            color: #8b3d3d;
+        }
+        .values .value, .why-choose .reason {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffe5e5;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            font-weight: 500;
+        }
         .contact {
             text-align: center;
             padding: 50px 20px;
@@ -150,17 +195,6 @@
             position: relative;
             /* animation: slideInUp 1.5s ease-in-out; */
         }
-        /* .footer::before {
-            content: "";
-            position: absolute;
-            top: -30px;
-            left: 0;
-            width: 100%;
-            height: 30px;
-            background: #8b3d3d;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        } */
         .footer-content {
             max-width: 800px;
             margin: auto;
@@ -210,20 +244,47 @@
             <button class="cta">Explore Now</button>
         </div>
     </div>
-    <div class="services">
-        <h2>Our Services</h2>
-        <p>We offer custom-made clothing, hand-embroidered designs, and exclusive fashion consultations to bring your style vision to life.</p>
+    <div class="section overview">
+        <h2>About Us</h2>
+        <p>Make Them Fashion has been crafting high-quality, stylish, and trend-forward clothing for over 35 years.</p>
+        <p>We are dedicated to blending traditional craftsmanship with modern designs, ensuring that each piece reflects elegance and sophistication. Our passion for fashion extends beyond trends, focusing on quality, comfort, and individuality.</p>
+        <p>From sourcing premium fabrics to employing skilled artisans, we take pride in every step of our production process. Whether it's casual wear or intricate bridal couture, our designs are crafted to make a statement.</p>
     </div>
-    <div class="categories">
-        <div class="category"><img src="images/saree.jpg" alt="Sarees">Sarees</div>
-        <div class="category"><img src="images/lehengas.jpeg" alt="Lehengas">Lehengas</div>
-        <div class="category"><img src="images/custom-designs.jpg" alt="Custom Designs">Custom Designs</div>
-        <div class="category"><img src="images/bridal-wear.jpg" alt="Bridal Wear">Bridal Wear</div>
+    <div class="section values">
+        <h2>Our Values</h2>
+        <div class="value">✔ <b>Quality & Craftsmanship</b> – Excellence in every stitch.</div>
+        <div class="value">✔ <b>Innovation & Creativity</b> – Unique and trend-setting designs.</div>
+        <div class="value">✔ <b>Integrity & Reliability</b> – Building long-term trust with customers.</div>
+        <div class="value">✔ <b>Sustainability</b> – Ethical and eco-friendly manufacturing practices.</div>
+    </div>
+    <div class="section categories">
+        <h2>Our Categories</h2>
+        <div class="categories-container">
+            <div class="category"><img src="images/shirts.jpg" alt="Shirts">Shirts (Formal & Casual)</div>
+            <div class="category"><img src="images/tshirts.jpg" alt="T-Shirts">T-Shirts (Sportswear, Casual, Nightwear)</div>
+            <div class="category"><img src="images/lehengas.jpeg" alt="Dresses">Dresses & Gowns</div>
+            <div class="category"><img src="images/bottomwear.jpg" alt="Bottom Wear">Bottom Wear (Jeans, Trousers, Track Pants)</div>
+            <div class="category"><img src="images/accessories.jpg" alt="Accessories">Accessories (Scarves, Aprons, Caps)</div>
+            <div class="category"><img src="images/bags.jpg" alt="Bags">Bags (Handbags, Shopping Bags)</div>
+            <div class="category"><img src="images/homefurnishing.jpg" alt="Home Furnishing">Home Furnishing</div>
+            <div class="category"><img src="images/jackets.jpg" alt="Jackets">Jackets & Outwear</div>
+            <div class="category"><img src="images/workwear.jpg" alt="Workwear">Workwear & Uniforms</div>
+            <div class="category"><img src="images/socks.jpg" alt="Socks">Socks & Legwear</div>
+            <div class="category">And Many more..</div>
+        </div>
+    </div>
+    <div class="section why-choose">
+        <h2>Why Choose Us?</h2>
+        <div class="reason">✔ <b>Expert Pattern Making</b> – Perfect fits with unique styles.</div>
+        <div class="reason">✔ <b>Cut to Pack Process</b> – Smooth and seamless production.</div>
+        <div class="reason">✔ <b>Design & Innovation</b> – Fashion-forward creativity.</div>
+        <div class="reason">✔ <b>Quality Manufacturing</b> – Advanced machinery & skilled craftsmanship.</div>
+        <div class="reason">✔ <b>Custom Solutions</b> – Tailored services to meet your brand’s unique needs.</div>
     </div>
     <div class="contact">
         <h2>Contact Us</h2>
-        <a href="mailto:contact@mtfashion.com">Email: contact@mtfashion.com</a>
-        <a href="tel:+919876543210">Phone: +91 98765 43210</a>
+        <a href="mailto:makethemfashion@gmail.com">Email: makethemfashion@gmail.com</a>
+        <a href="tel:+919920796108">Phone: +91 99207 96108</a> or <a href="tel:+919324780223">Phone: +91 93247 80223</a>
         <a href="#">Follow us on Instagram</a>
     </div>
     <div class="footer">
