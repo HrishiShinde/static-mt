@@ -154,37 +154,65 @@
         .category:hover {
             transform: scale(1.05);
         }
-        .overview, .values, .why-choose {
+        .values, .why-choose {
+            /* background: #ffe5e5; */
+            padding: 80px 10%;
             text-align: center;
-            padding: 60px 20px;
-            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 40px;
         }
-        .overview h2, .values h2, .why-choose h2 {
-            font-size: 36px;
-            color: #8b3d3d;
+        .values-container, .reasons-container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
         }
-        .values .value, .why-choose .reason {
-            max-width: 700px;
-            margin: 20px auto;
+        .value, .reason {
+            background: #faeaea;
             padding: 20px;
-            background: #ffe5e5;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
+            transition: transform 0.3s ease-in-out;
+        }
+        .value:hover, .reason:hover {
+            transform: scale(1.05);
+        }
+        .value-title, .reason-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #8b3d3d;
+            margin-bottom: 10px;
+        }
+        .value-content, .reason-content {
+            font-size: 16px;
+            font-weight: 400;
+            color: #555;
         }
         .contact {
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 10%;
             background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
         }
-        .contact a {
+        .contact a, span {
             display: block;
             font-size: 18px;
             color: #8b3d3d;
             text-decoration: none;
             font-weight: bold;
             margin: 10px 0;
+        }
+        .contact a:hover {
+            color: #ff6161;
+        }
+        .phone-container, .num-container {
+            display: inline-flex;
+            gap: 10px;
         }
         .footer {
             background: #8b3d3d;
@@ -231,6 +259,29 @@
                 width: 100%;
                 height: auto;
             }
+            .values-container, .reasons-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .value, .reason {
+                width: 280px;
+            }
+            .phone-title {
+                margin-bottom: -19px;
+            }
+            .phone-container {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .num-container {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -252,10 +303,12 @@
     </div>
     <div class="section values">
         <h2>Our Values</h2>
-        <div class="value">✔ <b>Quality & Craftsmanship</b> – Excellence in every stitch.</div>
-        <div class="value">✔ <b>Innovation & Creativity</b> – Unique and trend-setting designs.</div>
-        <div class="value">✔ <b>Integrity & Reliability</b> – Building long-term trust with customers.</div>
-        <div class="value">✔ <b>Sustainability</b> – Ethical and eco-friendly manufacturing practices.</div>
+        <div class="values-container">
+            <div class="value"><div class="value-title">Quality & Craftsmanship</div><div class="value-content">Excellence in every stitch.</div></div>
+            <div class="value"><div class="value-title">Innovation & Creativity</div><div class="value-content">Unique and trend-setting designs.</div></div>
+            <div class="value"><div class="value-title">Integrity & Reliability</div><div class="value-content">Building long-term trust with customers.</div></div>
+            <div class="value"><div class="value-title">Sustainability</div><div class="value-content">Ethical and eco-friendly manufacturing practices.</div></div>
+        </div>
     </div>
     <div class="section categories">
         <h2>Our Categories</h2>
@@ -275,16 +328,25 @@
     </div>
     <div class="section why-choose">
         <h2>Why Choose Us?</h2>
-        <div class="reason">✔ <b>Expert Pattern Making</b> – Perfect fits with unique styles.</div>
-        <div class="reason">✔ <b>Cut to Pack Process</b> – Smooth and seamless production.</div>
-        <div class="reason">✔ <b>Design & Innovation</b> – Fashion-forward creativity.</div>
-        <div class="reason">✔ <b>Quality Manufacturing</b> – Advanced machinery & skilled craftsmanship.</div>
-        <div class="reason">✔ <b>Custom Solutions</b> – Tailored services to meet your brand’s unique needs.</div>
+        <div class="reasons-container">
+            <div class="reason"><div class="reason-title">Expert Pattern Making</div><div class="reason-content">Perfect fits with unique styles.</div></div>
+            <div class="reason"><div class="reason-title">Cut to Pack Process</div><div class="reason-content">Smooth and seamless production.</div></div>
+            <div class="reason"><div class="reason-title">Design & Innovation</div><div class="reason-content">Fashion-forward creativity.</div></div>
+            <div class="reason"><div class="reason-title">Quality Manufacturing</div><div class="reason-content">Advanced machinery & skilled craftsmanship.</div></div>
+            <div class="reason"><div class="reason-title">Custom Solutions</div><div class="reason-content">Tailored services to meet your brand's unique needs.</div></div>
+        </div>
     </div>
     <div class="contact">
         <h2>Contact Us</h2>
         <a href="mailto:makethemfashion@gmail.com">Email: makethemfashion@gmail.com</a>
-        <a href="tel:+919920796108">Phone: +91 99207 96108</a> or <a href="tel:+919324780223">Phone: +91 93247 80223</a>
+        <div class="phone-container">
+            <span class="phone-title">Phone: </span>
+            <div class="num-container">
+                <a href="tel:+919920796108">+91 99207 96108</a> 
+                <span>/</span>
+                <a href="tel:+919324780223">+91 93247 80223</a>
+            </div>
+        </div>
         <a href="#">Follow us on Instagram</a>
     </div>
     <div class="footer">
