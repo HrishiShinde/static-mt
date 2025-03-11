@@ -1,3 +1,41 @@
+:root {
+    --bg-color: #fdf7f5;
+    --primary-color: #8b3d3d;
+    --secondary-color: #ff8585;
+    --hover-color: #ff6161;
+    --text-color: #333;
+    --category-bg: #ffe5e5;
+    --box-bg: #faeaea;
+    --section-bg: #fff
+}
+
+/* Apply Variables */
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: var(--font-family), sans-serif !important;
+}
+.header, .footer {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+.cta, #theme-toggle {
+    background-color: var(--secondary-color) !important;
+}
+.cta:hover, #theme-toggle:hover {
+    background-color: var(--hover-color) !important;
+}
+.section {
+    background: var(--section-bg) !important;
+}
+.categories {
+    background: var(--box-bg) !important;
+}
+.value, .reason {
+    background: var(--box-bg) !important;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -22,7 +60,7 @@ body {
     from { transform: scale(0.9); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
 }
-.header {
+/* .header {
     background-color: #8b3d3d;
     padding: 20px;
     text-align: center;
@@ -32,7 +70,63 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     animation: fadeIn 1.5s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
 }
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.brand-name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#theme-selector {
+    background: var(--secondary-color); /* Matching button color */
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 15px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    border-radius: 8px; /* Rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#theme-selector:hover {
+    background: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+#theme-selector option {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 8px;
+}
+
+#theme-selector:focus {
+    outline: none;
+    border-color: var(--hover-color);
+}
+
+
 .hero {
     text-align: center;
     padding: 150px 20px;

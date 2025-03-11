@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MT Fashion</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;700&family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet"> -->
+
+    <!-- Google Fonts Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&family=Cormorant+Garamond:wght@400;700&family=Lora:wght@400;600&family=Poppins:wght@400;700&family=Bodoni+Moda:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Dancing+Script:wght@400;600&family=Josefin+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">MT Fashion</div>
+    <div class="header">
+        <img src="images/logo.png" alt="MT Fashion Logo" class="logo">
+        <!-- <span class="brand-name">MT Fashion</span> -->
+        <select id="theme-selector">
+            <option value="warm">Warm & Elegant</option>
+            <option value="dark">Dark Mode</option>
+            <option value="pastel">Pastel</option>
+            <option value="minimalist">Minimalist</option>
+            <option value="ocean">Ocean</option>
+            <option value="retro">Retro</option>
+            <option value="royalElegance">Royal Elegance</option>
+            <option value="modernMinimalist">Modern Minimalist</option>
+            <option value="vintageLuxe">Vintage Luxe</option>
+            <option value="artisanNatural">Artisan Natural</option>
+            <option value="herbalBreeze">Herbal Breeze</option>
+            <option value="coutureNoir">Couture Noir</option>
+            <option value="silkSerenity">Silk Serenity</option>
+            <option value="blushElegance">Blush Elegance</option>
+            <option value="lavenderDream">Lavender Dream</option>
+            <option value="oceanBreeze">Ocean Breeze</option>
+        </select>        
+    </div>
+    
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -81,5 +108,7 @@
             </p>
         </div>
     </div>
+    
+    <script src="js/theme.js"></script>
 </body>
 </html>
