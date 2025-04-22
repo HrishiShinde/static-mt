@@ -1,0 +1,25 @@
+/* Theme Styles */
+#theme-selector, #font-selector {
+    background: transparent;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 116px;
+}
+
+#theme-selector:hover, #font-selector:hove {
+    background: var(--btn-hover);
+    border-color: var(--btn-hover);
+}
+
+#theme-selector option, #font-selector option {
+    background: var(--body-bg);
+    color: var(--text-color);
+    padding: 8px;
+}
+
+#theme-selector:focus, #font-selector:focus {
+    outline: none;
+    border-color: var(--btn-hover);
+}
