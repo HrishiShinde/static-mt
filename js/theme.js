@@ -1,5 +1,5 @@
 const themes = {
-    bubblepop: {
+    candyfloss: {
         "--body-bg": "#c0eff1",
         "--text-color": "#000609",
 
