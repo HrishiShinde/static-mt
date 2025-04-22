@@ -89,7 +89,7 @@ nav.header.navbar {
 }
 .hero-overlay {
     background: rgba(86, 84, 84, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     position: absolute;
     top: 0;
     left: 0;
@@ -279,4 +279,23 @@ nav.header.navbar {
 }
 .footer a:hover {
     color: var(--text-color) !important;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--btn-hover);
 }

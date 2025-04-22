@@ -18,11 +18,13 @@
         padding: 12px 24px;
     }
     .categories {
+        padding: 40px 5%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
     .category {
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
     .category img {
