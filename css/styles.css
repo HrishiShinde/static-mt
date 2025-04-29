@@ -62,6 +62,20 @@ nav.header.navbar {
     height: 2.5rem;
     width: auto;
 }
+
+/* Temp changes */
+.custom-toggler {
+    background-color: #1c1c1c;
+    border: 1px solid #c8c8c8;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+.custom-toggler:hover {
+    background-color: #2a2a2a;
+} 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(200,200,200,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .navbar-toggler-icon svg {
     fill: var(--text-color) !important;
 }

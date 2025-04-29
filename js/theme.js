@@ -134,3 +134,9 @@ document.getElementById("theme-selector").addEventListener("change", function() 
 document.getElementById("font-selector").addEventListener("change", function() {
     applyStyles(fonts, this.value);
 });
+
+// Default Theme.
+applyStyles(themes, 'coutureNoir');
+applyStyles(fonts, 'josefinSans');
+document.getElementById('theme-selector').style.display = 'none';
+document.getElementById('font-selector').style.display = 'none';
