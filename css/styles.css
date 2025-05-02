@@ -273,6 +273,40 @@ nav.header.navbar {
     gap: 10px;
 }
 
+.inline-insta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--contact-a-color) !important;
+    text-decoration: none;
+    margin: 11px 0;
+}
+.contact a.inline-insta:hover {
+    color: var(--contact-a-color) !important;
+}
+.inline-insta i.bi-instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    line-height: 1;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-insta:hover .insta-handle {
+    color: var(--contact-a-hover-color) !important;
+}
+
+.inline-insta i, .inline-insta span {
+    color: var(--contact-a-color) !important;
+}
+
 
 .footer {
     background: var(--footer-bg) !important;
