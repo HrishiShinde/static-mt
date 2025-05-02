@@ -41,7 +41,7 @@
         width: 280px;
     }
     .phone-title {
-        margin-bottom: -19px;
+        margin-bottom: -19px !important;
     }
     .phone-container {
         display: inline-flex;
